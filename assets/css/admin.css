@@ -1,0 +1,284 @@
+/* Admin Styles for Gemini File Search */
+
+.gfs-admin-page {
+    max-width: 1200px;
+}
+
+.gfs-admin-page h1 {
+    margin-bottom: 20px;
+}
+
+/* Connection Status */
+#gfs-connection-status,
+#gfs-corpus-status {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#gfs-connection-status.success,
+#gfs-corpus-status.success {
+    color: #46b450;
+}
+
+#gfs-connection-status.error,
+#gfs-corpus-status.error {
+    color: #dc3232;
+}
+
+/* Sync Controls */
+.gfs-sync-controls {
+    background: #f0f0f1;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.gfs-sync-controls button {
+    margin-bottom: 10px;
+}
+
+/* Progress Bar */
+.gfs-progress-bar {
+    width: 100%;
+    height: 30px;
+    background: #f0f0f1;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.gfs-progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #2271b1, #135e96);
+    width: 0%;
+    transition: width 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Sync Results */
+#gfs-sync-results {
+    margin-top: 20px;
+}
+
+.gfs-sync-summary {
+    background: white;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.gfs-sync-summary h3 {
+    margin-top: 0;
+}
+
+.gfs-sync-stat {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 15px;
+    background: #f0f0f1;
+    border-radius: 4px;
+}
+
+.gfs-sync-stat.success {
+    background: #d5f4e6;
+    color: #008a20;
+}
+
+.gfs-sync-stat.error {
+    background: #fcf0f1;
+    color: #d63638;
+}
+
+/* Sync Log Table */
+.gfs-status-success {
+    color: #008a20;
+    font-weight: bold;
+}
+
+.gfs-status-error {
+    color: #d63638;
+    font-weight: bold;
+}
+
+/* Search Test */
+.gfs-search-test,
+.gfs-ai-search-test {
+    background: white;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#gfs-test-results,
+#gfs-ai-results {
+    margin-top: 20px;
+}
+
+.gfs-test-product {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.gfs-test-product img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.gfs-test-product-info {
+    flex: 1;
+}
+
+.gfs-test-product-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.gfs-test-product-price {
+    color: #46b450;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.gfs-test-product-description {
+    color: #666;
+    margin: 10px 0;
+}
+
+.gfs-test-product-meta {
+    font-size: 12px;
+    color: #999;
+}
+
+.gfs-relevance-score {
+    background: #2271b1;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+.gfs-ai-response-box {
+    background: #f0f6fc;
+    border-left: 4px solid #2271b1;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.gfs-ai-response-box h3 {
+    margin-top: 0;
+    color: #2271b1;
+}
+
+/* Loading Spinner */
+.gfs-loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.gfs-spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #2271b1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: gfs-spin 1s linear infinite;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@keyframes gfs-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error Messages */
+.gfs-error {
+    background: #fcf0f1;
+    border-left: 4px solid #d63638;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+
+/* No Results */
+.gfs-no-results {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+
+/* Manage Stores */
+.gfs-manage-controls {
+    background: #f0f0f1;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.gfs-manage-controls button {
+    margin-right: 10px;
+}
+
+/* Modal */
+.gfs-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gfs-modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gfs-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.gfs-modal-close:hover {
+    color: #000;
+}
+
+.gfs-modal-content h2 {
+    margin-top: 0;
+}
+
+.gfs-modal-content table {
+    margin-top: 15px;
+}
